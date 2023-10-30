@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+
+    android:viewportWidth="500"
+    android:viewportHeight="500"
+    android:width="500dp"
+    android:height="500dp">
+
+    <path
+        android:pathData="M396 125L436.5 125L437 125.5L437 375L396 375L396 257.5L393.5 259L230.5 374L230 258.5L228.5 257L63.5 374L63 126.5L65.5 128L228.5 243L230 241.5L230.5 126L395.5 243L396 125Z"
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+</vector>

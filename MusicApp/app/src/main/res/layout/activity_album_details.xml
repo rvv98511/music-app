@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player_bg"
+    tools:context=".AlbumDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/layoutTop"
+        android:background="@drawable/player_gradient"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageViewBackButton"
+            android:src="@drawable/chevron_left"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAlbumTitle"
+            android:text="Album Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@id/imageViewBackButton"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/albumPhoto"
+        android:layout_below="@id/layoutTop">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:src="@drawable/music_playing"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageViewAlbumPhoto" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:id="@+id/imageViewGradient"
+            android:background="@drawable/player_gradient"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/albumPhoto"
+        android:id="@+id/recyclerViewListSongAlbum" />
+
+</RelativeLayout>

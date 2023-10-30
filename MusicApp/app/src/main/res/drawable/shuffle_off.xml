@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+
+    android:viewportWidth="500"
+    android:viewportHeight="500"
+    android:width="500dp"
+    android:height="500dp">
+
+    <path
+        android:pathData="M375.5 43L457 125.5L375 206.5L375 145L304.5 145L300 150.5L244 246.5L243 251.5L300 349.5L304.5 355L375 355L375 293.5L457 374.5L375.5 457L375 395L279.5 395L279 393.5L218.5 291L157.5 395L42 395L42 355L133.5 355L135 353.5L195 249.5L133.5 145L42 145L42 105L157.5 105L159 106.5L218.5 209L279 105L375 105L375.5 43Z"
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+</vector>

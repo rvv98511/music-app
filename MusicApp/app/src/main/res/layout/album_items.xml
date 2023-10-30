@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="250dp"
+    android:id="@+id/layoutAlbumItem"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/relativeLayoutAlbum" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageViewAlbumMusic"
+            android:src="@drawable/music_playing"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imageViewAlbumMusic"
+            android:src="@drawable/album_items_gradient"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAlbumTitle"
+            android:layout_below="@+id/imageViewAlbumMusic"
+            android:text="Album Title"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
